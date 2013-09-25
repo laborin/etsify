@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<link href="style/jquery.etsify-0.1.css" rel="stylesheet" type="text/css"></link>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.etsify-0.1.js"></script>
+<style>
+#container
+{
+	position:absolute;
+	left:200px;
+	top:50px;
+	width:320px;
+	height:480px;
+	border:1px #000000 solid;
+	box-shadow: 8px 8px 29px rgba(0, 0, 0, 0.91);
+	    -moz-box-shadow: 8px 8px 29px rgba(0, 0, 0, 0.91);
+	    -webkit-box-shadow: 8px 8px 29px rgba(0, 0, 0, 0.91);
+	
+}
+</style>
+<script type="text/javascript">
+	// The container element should have the exact HTML structure as in this sample page
+	// NOTE: I changed the UL's under the SECTION tag to DIVS
+	$(document).ready(function()
+	{
+		$("#container").etsyNavigation();
+	});
+</script>
+</head>
+<body>
+	<div id="container">
+	    <header>
+	        <nav>
+	            <ul>
+	                <li data-menu="one"><a href="#">Home</a></li>
+	                <li data-menu="two"><a href="#">About us</a></li>
+	                <li data-menu="three"><a href="#">Our prices</a></li>
+	                <li data-menu="four"><a href="#">Testimonials</a></li>
+	                <li data-menu="five"><a href="#">Portfolio</a></li>
+	                <li data-menu="six"><a href="#">Blog</a></li>
+	                <li data-menu="seven"><a href="#">Contact</a></li>
+	            </ul>
+	        </nav>
+	    </header>
+	    <section>
+	        <div id="one">
+				<h1>One</h1>
+	        	<p>This is one content</p>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				<ul>
+				   <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+				   <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+				   <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+				   <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+				</ul>
+				<ol>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				   <li>Vestibulum auctor dapibus neque.</li>
+				</ol>
+	       
+			</div>
+	        <div id="two">
+				<h1>Two</h1>
+	        	<p>This is two content</p>
+				<form action="#" method="post">
+				    <div>
+				         <label for="name">Text Input:</label>
+				         <input type="text" name="name" id="name" value="" tabindex="1" />
+				    </div>
+
+				    <div>
+				         <h4>Radio Button Choice</h4>
+
+				         <label for="radio-choice-1">Choice 1</label>
+				         <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
+
+						 <label for="radio-choice-2">Choice 2</label>
+				         <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2" />
+				    </div>
+
+					<div>
+						<label for="select-choice">Select Dropdown Choice:</label>
+						<select name="select-choice" id="select-choice">
+							<option value="Choice 1">Choice 1</option>
+							<option value="Choice 2">Choice 2</option>
+							<option value="Choice 3">Choice 3</option>
+						</select>
+					</div>
+	
+					<div>
+						<label for="textarea">Textarea:</label>
+						<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+					</div>
+	
+					<div>
+					    <label for="checkbox">Checkbox:</label>
+						<input type="checkbox" name="checkbox" id="checkbox" />
+				    </div>
+
+					<div>
+					    <input type="submit" value="Submit" />
+				    </div>
+				</form>
+			</div>
+	        <div id="three">
+				<h1>Three</h1>
+	        	<p>This is three content</p>
+				<h1>HTML Ipsum Presents</h1>
+	       
+				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+				<h2>Header Level 2</h2>
+	       
+				<ol>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ol>
+
+				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+				<h3>Header Level 3</h3>
+
+				<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ul>
+
+				
+				<h1>HTML Ipsum Presents</h1>
+	       
+				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+				<h2>Header Level 2</h2>
+	       
+				<ol>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ol>
+
+				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+				<h3>Header Level 3</h3>
+
+				<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ul>
+
+				
+			</div>
+	        <div id="four">
+				<h1>Four</h1>
+	        	<p>This is four content</p>
+			</div>
+	        <div id="five">
+				<h1>Five</h1>
+	        	<p>This is five content</p>
+			</div>
+	        <div id="six">
+				<h1>Six</h1>
+	        	<p>This is six content</p>
+			</div>
+	        <div id="seven">
+				<h1>Seven</h1>
+	        	<p>This is seven content</p>
+			</div>
+	    </section>
+	    
+	</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/*
+ * Etsy Navigation - jQuery plugin by Emmanuel Laborin laborin@gmail.com
+ * Stylesheet
+ *
+ */
+body
+{
+	height:100%;
+}
+.etsyNavigation_container
+{
+	padding: 0 0 0 0;
+	position: relative;
+	overflow:hidden !important;
+	background: url('../img/background.jpg') repeat-x;
+}
+.etsyNavigation_container header
+{
+	margin:0;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	overflow:hidden;
+	text-align:center;
+	height:45px;
+	background: url('../img/arrow.png') no-repeat center bottom;
+}
+.etsyNavigation_container header nav
+{
+	position:relative;
+	overflow:visible;
+	display: inline-block;
+	height:45px;
+	margin: 0 auto;
+}
+.etsyNavigation_container header nav ul
+{
+	position:absolute;
+	list-style:none;
+	display:inline;
+	padding:0;
+	margin:6px 0 0 0;
+	left:50%;
+}
+.etsyNavigation_container header nav ul li
+{
+	display:inline;
+	float:left;
+	margin:0 30px;
+	padding:0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size:25px;
+	font-weight: normal;
+	text-shadow: 2px 2px 1px #000000;
+}
+.etsyNavigation_container header nav ul li a
+{
+	text-decoration:none;
+	color: #bbbbbb;
+}
+.etsyNavigation_selectedMenu
+{
+	color: #ffffff !important;
+}
+.etsyNavigation_container section
+{
+	position:absolute;
+	left:0;
+	bottom:0;
+	margin:0;
+	width:100%;
+	overflow:hidden;
+}
+#etsyNavigation_container_section_wrapper
+{
+	position:absolute;
+	margin-top:45px;
+	left:0;
+	bottom:0;
+	margin:0;
+	width:100%;
+	overflow:hidden;
+	background: #ffffff url('../img/content-background.png') repeat-x left bottom;
+}
+.etsyNavigation_container div section div
+{
+	display:inline;
+	float:left;
+	margin:0;
+	padding:0px;
+	-webkit-overflow-scrolling:touch;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
